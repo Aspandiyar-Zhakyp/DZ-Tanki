@@ -1,0 +1,83 @@
+using System;
+namespace Tank
+{
+    public class tank
+    {
+        protected string name;
+        protected int Ammunition;
+        protected int ArmorLvL;
+        protected int ManeuverLvL;
+        public tank(int Ammunition, int ArmorLvL, int ManeuverLvL, string name)
+        {
+            this.Ammunition = Ammunition;
+            this.ArmorLvL = ArmorLvL;
+            this.ManeuverLvL = ManeuverLvL;
+            this.name = name;
+        }
+        public tank()
+        {
+            Ammunition = 0;
+            ArmorLvL = 0;
+            ManeuverLvL = 0;
+            name = "null";
+        }
+        public void Print()
+        {
+            Console.WriteLine("name - " + name);
+            Console.WriteLine("Ammunition = " + Ammunition + " lvlBroni = " + ArmorLvL + " lvlManevr = " + ManeuverLvL);
+        }
+        public static tank operator *(tank T34, tank pantera)
+        {
+            if (T34.Ammunition > pantera.Ammunition && T34.ArmorLvL > pantera.ArmorLvL)
+            {
+                return T34;
+            }
+            if (T34.Ammunition > pantera.Ammunition && T34.ManeuverLvL > pantera.ManeuverLvL)
+            {
+                return T34;
+            }
+            if (T34.ArmorLvL > pantera.ArmorLvL && T34.ManeuverLvL > pantera.ManeuverLvL)
+            {
+                return T34;
+            }
+            else
+            {
+                return pantera;
+            }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rand = new Random();
+            tank[] VIN = new tank[5];
+            tank[] T34 = new tank[5];
+            for (int i = 0; i < T34.Length; i++)
+            {
+                VIN[i] = new tank();
+            }
+            for (int i = 0; i < T34.Length; i++)
+            {
+                T34[i] = new tank(rand.Next(0, 100), rand.Next(0, 100), rand.Next(0, 100), "T34");
+            }
+            tank[] pantera = new tank[5];
+            for (int i = 0; i < T34.Length; i++)
+            {
+                pantera[i] = new tank(rand.Next(0, 100), rand.Next(0, 100), rand.Next(0, 100), "pantera");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                T34[i].Print();
+                pantera[i].Print(); ;
+                VIN[i] = T34[i] * pantera[i];
+                Console.WriteLine();
+                Console.WriteLine($"В {i + 1} схватке победил");
+                VIN[i].Print();
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+
+        }
+    }
+}
