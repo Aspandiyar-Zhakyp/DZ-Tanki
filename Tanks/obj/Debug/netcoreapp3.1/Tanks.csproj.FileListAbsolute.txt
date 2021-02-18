@@ -1,0 +1,13 @@
+C:\Users\Esetb\source\repos\Tanks\Tanks\bin\Debug\netcoreapp3.1\Tanks.exe
+C:\Users\Esetb\source\repos\Tanks\Tanks\bin\Debug\netcoreapp3.1\Tanks.deps.json
+C:\Users\Esetb\source\repos\Tanks\Tanks\bin\Debug\netcoreapp3.1\Tanks.runtimeconfig.json
+C:\Users\Esetb\source\repos\Tanks\Tanks\bin\Debug\netcoreapp3.1\Tanks.runtimeconfig.dev.json
+C:\Users\Esetb\source\repos\Tanks\Tanks\bin\Debug\netcoreapp3.1\Tanks.dll
+C:\Users\Esetb\source\repos\Tanks\Tanks\bin\Debug\netcoreapp3.1\Tanks.pdb
+C:\Users\Esetb\source\repos\Tanks\Tanks\obj\Debug\netcoreapp3.1\Tanks.csprojAssemblyReference.cache
+C:\Users\Esetb\source\repos\Tanks\Tanks\obj\Debug\netcoreapp3.1\Tanks.AssemblyInfoInputs.cache
+C:\Users\Esetb\source\repos\Tanks\Tanks\obj\Debug\netcoreapp3.1\Tanks.AssemblyInfo.cs
+C:\Users\Esetb\source\repos\Tanks\Tanks\obj\Debug\netcoreapp3.1\Tanks.csproj.CoreCompileInputs.cache
+C:\Users\Esetb\source\repos\Tanks\Tanks\obj\Debug\netcoreapp3.1\Tanks.dll
+C:\Users\Esetb\source\repos\Tanks\Tanks\obj\Debug\netcoreapp3.1\Tanks.pdb
+C:\Users\Esetb\source\repos\Tanks\Tanks\obj\Debug\netcoreapp3.1\Tanks.genruntimeconfig.cache
